@@ -1,2 +1,2 @@
 #!/bin/bash
-expor CFILE|gcc $CFILE -o c
+gcc -E $CFILE -o c
