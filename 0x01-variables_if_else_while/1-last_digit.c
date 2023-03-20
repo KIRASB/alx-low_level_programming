@@ -5,10 +5,12 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * main - Prints the last digit of a randomly generated number
+ *        and whether it is greater than 5, less than 6, or 0.
  *
- * Return : Always 0 (Succes)
+ * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
 	int n;
