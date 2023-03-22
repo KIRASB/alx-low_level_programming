@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - prints all single digit numbers of base 16 starting from 0,
- * followed by a new line, using putchar
+ * main - prints all the numbers of base 16 in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
-	char la;
+	char ch;
 
-	for (n = 0 ; n < 16 ; n++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(n + '0');
+		putchar(n);
 	}
-	for (la = 'a'; la < 'g'; la++)
+	for (ch = 'a'; ch <= 'f'; ch++)
 	{
-		putchar(la);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
