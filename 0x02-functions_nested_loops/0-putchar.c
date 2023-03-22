@@ -3,7 +3,7 @@
 /**
  * main -Entry point
  * print the output
- * return: always 0 (Succes)
+ * Return: always 0 (Succes)
  */
 int main(void)
 {
