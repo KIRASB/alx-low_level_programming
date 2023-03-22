@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main -Entry point
  * print the output
@@ -6,6 +7,14 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	putchar(95);
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 	return (0);
 }
