@@ -1,17 +1,17 @@
-#include <stdio.h>
 #include "main.h"
-/**
- * main-Entry point 
- * print the alphabet
- * Retuen always 0 (Succes)
- */
+
+
+	/**
+	 * print_alphabet - print all alphabet in lowercase
+	 *
+	 */
 void print_alphabet(void)
 {
-	int a;
+	char c;
 
-	for (a = 97; a <= 122 ; a++)
+	for (c = 97; c <= 122; c++)
 	{
-	  putchar(a);
-  }
-	putchar('\n');
+		_putchar(c);
+	}
+	_putchar('\n');
 }
