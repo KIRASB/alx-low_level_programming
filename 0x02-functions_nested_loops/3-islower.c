@@ -5,6 +5,7 @@
  * if c has a lower case value the function return 1
  * if not the function return 0
  * and a new line at the end
+ * Return: always 0 (Sucess)
  */
 int _islower(int c)
 {
