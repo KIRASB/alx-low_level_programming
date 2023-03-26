@@ -7,12 +7,12 @@
  */
 int _abs(int t)
 {
-	if  (n > 0)
+	if  (t > 0)
 	{
-		return (n);
+		return (t);
 	}
 	else
 	{
-		return (-n);
+		return (-t);
 	}
 }
