@@ -1,13 +1,16 @@
+
+
 #include "main.h"
 
+
 /**
- * _abs - gives the absulute number of a number
- * @t: is the integer of the function
- *  Return: the absolute num of the number
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
  */
 int _abs(int n)
 {
-	if  (n > 0)
+	if (n >= 0)
 	{
 		return (n);
 	}
@@ -16,3 +19,4 @@ int _abs(int n)
 		return (-n);
 	}
 }
+
