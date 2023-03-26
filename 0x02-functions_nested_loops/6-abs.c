@@ -5,14 +5,14 @@
  * @t: is the integer of the function
  *  Return: the absolute num of the number
  */
-int _abs(int t)
+int _abs(int n)
 {
-	if  (t > 0)
+	if  (n > 0)
 	{
-		return (t);
+		return (n);
 	}
 	else
 	{
-		return (-t);
+		return (-n);
 	}
 }
