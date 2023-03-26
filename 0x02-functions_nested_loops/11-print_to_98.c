@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_to_98 - is a function print  numbers from int n to 98
@@ -25,5 +26,5 @@ void print_to_98(int n)
 		printf("%d, ", b);
 		printf("98");
 	}
-	return (0);
+	putchar('\n');
 }
