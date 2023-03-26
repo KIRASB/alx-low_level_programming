@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main - entry point that cumpute the sum og all the nums above 1024 in condition of int % 5&3 = 0
- * return: 0
+ * main - cumpute the sum ofthe nums above 1024 in condition of int % 5&3 = 0
+ * Return: 0
  */
 int main(void)
 {
 	int i, sum = 0;
-	
+
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
