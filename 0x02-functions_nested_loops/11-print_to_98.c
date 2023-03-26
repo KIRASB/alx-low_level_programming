@@ -24,7 +24,7 @@ void print_to_98(int n)
 	for (b = n ; b > 98 ; b--)
 	{
 		printf("%d, ", b);
-		printf("98");
 	}
+	printf("98");
 	putchar('\n');
 }
