@@ -16,7 +16,7 @@ void print_to_98(int n)
 		{
 			printf("%d", a);
 		}
-		if (a =!)
+		if (a != 0)
 		{
 			printf("%d, ", a);
 		}
