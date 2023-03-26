@@ -5,17 +5,15 @@
  */
 int main(void)
 {
-	int a;
-	int b = 0;
-
-
-	for (a = 0 ; a > 1024 ; a++)
+	int i, sum = 0;
+	
+	for (i = 0; i < 1024; i++)
 	{
-		if (a % 3 == 0 || a % 5 == 0)
+		if ((i % 3) == 0 || (i % 5) == 0)
 		{
-			b = b + a;
+			sum += i;
 		}
 	}
-	printf ("%d", b);
+	printf("%d\n", sum);
 	return (0);
 }
