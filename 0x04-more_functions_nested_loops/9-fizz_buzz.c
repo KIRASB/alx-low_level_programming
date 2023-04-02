@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - prints fizz buzz and numbres
@@ -11,19 +12,23 @@ int main(void)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf( "FizzBuzz");
 		}
-		if (a % 3 == 0)
+		else if (a % 3 == 0 && a % 5 != 0)
 		{
-			printf("Fizz");
+			printf(" Fizz");
 		}
-		if (a % 5 == 0)
+		else if (a % 5 == 0 && a % 3 != 0)
 		{
-			printf("Buzz");
+			printf(" Buzz");
+		}
+		else if (i == 1)
+		{
+			printf("%d", a);
 		}
 		else
 		{
-			printf("%d ", a);
+			printf(" %d ", a);
 		}
 	}
 	printf("\n");
