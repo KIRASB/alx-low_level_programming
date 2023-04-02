@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints fizz buzz and numbres
+ * Return: just 0
  */
 int main(void)
 {
@@ -10,19 +11,19 @@ int main(void)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf ("FizzBuzz");
+			printf("FizzBuzz");
 		}
-		if ( a % 3 == 0)
+		if (a % 3 == 0)
 		{
-			printf ("Fizz");
+			printf("Fizz");
 		}
 		if (a % 5 == 0)
 		{
-			printf ("Buzz");
+			printf("Buzz");
 		}
-		else 
+		else
 		{
-			printf ("%d ", a);
+			printf("%d ", a);
 		}
 	}
 	printf("\n");
