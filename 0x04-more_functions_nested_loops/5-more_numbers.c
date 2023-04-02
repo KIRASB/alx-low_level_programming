@@ -4,23 +4,20 @@
  *
  * Return: Always 0.
  */
-
 void more_numbers(void)
 {
-	int a = 0;
-	int c;
+	int i, j;
 
-	while (a <= 9)
+	for (i = 1; i <= 10; i++)
 	{
-		for (c = 0; c <= 14; c++)
+		for (j = 0; j <= 14; j++)
 		{
-			if (c >= 10)
+			if (j >= 10)
 			{
 				_putchar('1');
+				_putchar (j % 10 + '0');
 			}
-			_putchar(c % 10 + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
-		a++;
 	}
 }
