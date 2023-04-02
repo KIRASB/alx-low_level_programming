@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isuppe - functionthat check if c is a upercase or lower
+ * _isupper - uppercase letters
  * @c: the variable
  * Return: 1 if the c is upper case and 0 if it's lower
  */
