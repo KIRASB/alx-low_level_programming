@@ -4,14 +4,14 @@
  * @s: thr string
  * Return: the number of strings
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
 	int r = 0;
 
-	while (*str != '/0')
+	while (*s != '\0')
 	{
 		r++;
-		*str++;
+		s++;
 	}
 	return (r);
 }
