@@ -2,19 +2,19 @@
 
 void rev_string(char *s)
 {
-	int a = 0;
+	int a;
+	int a = s[0];
 	int b;
 
-	while (*s != '\0')
+	while (a != '\0')
 	{
 		a++;
-		s++;
 	}
-	s--;
-	for  (b = 0; b < a; b++)
+	a--;
+	int c = a;
+	for (b = 0; b < c; b++)
 	{
-		_putchar(*s);
-		s--;
+		_putchar(s[a]);
+		a--;
 	}
-	_putchar('\n');
 }
