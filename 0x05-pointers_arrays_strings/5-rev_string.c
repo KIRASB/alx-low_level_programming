@@ -2,19 +2,18 @@
 
 void rev_string(char *s)
 {
-	int a;
-	int a = s[0];
-	int b;
-
+	char a = s[0];
+	int b = 0;
+	int c = 0;
 	while (a != '\0')
 	{
 		a++;
+		b++;
 	}
 	a--;
-	int c = a;
-	for (b = 0; b < c; b++)
+	for (c < b; c++)
 	{
-		_putchar(s[a]);
-		a--;
+		_putchar(s[b]);
+		b--;
 	}
-}
+		
