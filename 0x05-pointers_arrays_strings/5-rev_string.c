@@ -2,7 +2,7 @@
 /**
  * rev_string - flip a string
  * @s: the intpt trng
- * Return: reversed first input
+ * Return: reversed the first input
  */
 
 void rev_string(char *s)
