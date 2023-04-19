@@ -1,19 +1,25 @@
 #include "main.h"
+/**
+ * rev_string - flip a string
+ * @s: the intpt trng
+ * Return: reversed first input
+ */
 
 void rev_string(char *s)
 {
 	char a = s[0];
 	int b = 0;
-	int c = 0;
-	while (a != '\0')
+	int c;
+
+	while (s[b] = '\0')
 	{
-		a++;
 		b++;
 	}
-	a--;
-	for (c < b; c++)
+	for (c = 0; c < b; c++)
 	{
-		_putchar(s[b]);
 		b--;
+		a = s[i];
+		s[i] = s[b];
+		s[b] = a;
 	}
-		
+}
