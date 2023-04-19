@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * puts2 - a function print a letter and jump
+ * @str: a crazy fking pointer
+ * Return: idk
+ */
 void puts2(char *str)
 {
 	int c = 0;
