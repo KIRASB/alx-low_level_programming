@@ -19,12 +19,9 @@ void puts_half(char *str)
 	{
 		n = a / 2;
 	}
-	for (c = 0; c < a; c++)
+	for (c = n; c < a; c++)
 	{
-		if (c > n)
-		{
-			_putchar(str[c]);
-		}
+		_putchar(str[c]);
 	}
 	_putchar('\n');
 }
