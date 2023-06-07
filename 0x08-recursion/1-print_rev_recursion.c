@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+ * _print_rev_recursion - the function print the input revertionally
+ * @s: the input
  */
 void _print_rev_recursion(char *s)
 {
@@ -7,9 +9,5 @@ void _print_rev_recursion(char *s)
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
-	}
-	else
-	{
-		_putchar ('\n');
 	}
 }
