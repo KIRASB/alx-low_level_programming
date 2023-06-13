@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * atoi - it make sur that the input in int
+ * _atoi - it make sur that the input in int
  * @s: the string number
  * Return: n the intiger after fixing
  */
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int b = 0;
 	int c = 0;
@@ -60,8 +60,8 @@ int main(int argc, char *argv[])
 	{
 		int a, b, x;
 
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
+		a = _atoi(argv[1]);
+		b = _atoi(argv[2]);
 		x = a * b;
 		printf("%d\n", x);
 	}
