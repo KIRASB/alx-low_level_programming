@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
+ * main - add numbers
+ * @argc: number of argumments
+ * @argv: array of strings
+ * Return: depends on each stuation
  */
 int main(int argc, char *argv[])
 {
@@ -20,14 +24,13 @@ int main(int argc, char *argv[])
 			if (*argv[a] >= '0' && *argv[a] <= '9')
 			{
 				x = atoi(argv[a]);
-				n = x;
+				n = x; 
 				z = z + n;
 			}
 			else
 			{
 				printf("Error\n");
 				return (1);
-				break;
 			}
 		}
 		printf("%d\n", z);
