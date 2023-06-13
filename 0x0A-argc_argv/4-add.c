@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	return (0);
 }
 /**
- * _atoi - it make sur that the input in int
+ * _atoi - it makes sur that the input in int
  * @s: the string number
  * Return: n the intiger after fixing
  */
