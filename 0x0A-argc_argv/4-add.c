@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
 /**
  * main - add numbers
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 			if (*argv[a] >= '0' && *argv[a] <= '9')
 			{
 				x = atoi(argv[a]);
-				n = x; 
+				n = x;
 				z = z + n;
 			}
 			else
