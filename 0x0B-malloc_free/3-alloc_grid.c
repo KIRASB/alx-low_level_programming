@@ -1,51 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * **alloc_grid - make a matrix of zeros
- * @width: the width of the adress
- * @height: the height of the matrix
- * Return: it depends of the functio somtimes NULL somtimes ptr
+ * alloc_grid - nested loop to make a 2 dim array
+ * @width: width input
+ * @height: height input
+ * Return: pointer to 2 dim aray
  */
 int **alloc_grid(int width, int height)
 {
-	if (width == 0 || height == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		int **ptr;
-		int i;
-		int y;
+	int **ptr;
+	int x, y;
 
-		ptr = (int **)calloc(height, sizeof(int *));
-		if (ptr == NULL)
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	ptr = malloc(sizeof(int *) * height);
+
+	if (ptr == NULL)
+		return (NULL);
+
+	for (x = 0; x < height; x++)
+	{
+		ptr[x] = malloc(sizeof(int) * width);
+
+		if (ptr[x] == NULL)
 		{
+			for (; x >= 0; x--)
+				free(ptr[x]);
+
+			free(ptr);
 			return (NULL);
 		}
-		else
-		{
-			for (i = 0; i < width; i++)
-			{
-				ptr[i] = (int *)calloc(width, sizeof(int));
-				if (ptr[i] == NULL)
-				{
-					for (; i >= 0; i--)
-					{
-						free(ptr[i]);
-					}
-					free(ptr);
-					return (NULL);
-				}
-			}
-			for (i = 0; i < height; i++)
-			{
-				for (y = 0; y < width; y++)
-			{
-				ptr[i][y] = 0;
-					}
-			}
-		}
-		return (ptr);
 	}
+
+	for (x = 0; x < height; x++)
+	{
+		for (y = 0; y < width; y++)
+			ptr[x][y] = 0;
+	}
+
+	return (ptr);
 }
