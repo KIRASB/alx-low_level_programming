@@ -1,9 +1,13 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
+
 /**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
  */
-dog_t *new_dog(char *name, float age, char *owner)
+int _strlen(char *s)
 {
 	int i;
 
