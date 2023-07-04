@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *array_range - makes an array of intigers
+ * *array_range - makes an array of inntigers
  * @min: minimum range of values stored
  * @max: maximum range of values stored and number of elements
  *

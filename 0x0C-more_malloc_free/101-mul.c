@@ -51,7 +51,7 @@ void errors(void)
 
 /**
  * main - multiplies two positive numbers
- * @argc: number of arguments
+ * @argc: nummber of arguments
  * @argv: array of arguments
  *
  * Return: always 0 (Success)
