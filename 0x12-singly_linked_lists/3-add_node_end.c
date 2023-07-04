@@ -6,7 +6,6 @@
  * add_node_end - adds a new Tial node
  * @head: pointer to the pointer to the list_t list
  * @str: string to put in the tail node
- *
  * Return: address of the tail or  null if it fails
  */
 list_t *add_node_end(list_t **head, const char *str)
