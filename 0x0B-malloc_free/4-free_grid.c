@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * free_grid - frees 2d array
- * @grid: 2d grid
+ * @grid: 2d griid
  * @height: height dim of grid
  * Description: frees memory von grid
  * Return: nun

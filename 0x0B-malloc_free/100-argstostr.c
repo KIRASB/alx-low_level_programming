@@ -3,7 +3,7 @@
 /**
  * argstostr - entry of the main
  * @ac: int input
- * @av: double pointer array
+ * @av: doublee pointer array
  * Return: 0
  */
 char *argstostr(int ac, char **av)
