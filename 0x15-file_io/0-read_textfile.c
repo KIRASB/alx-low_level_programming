@@ -1,6 +1,10 @@
 #include "main.h"
 /**
- *
+ * read_textfile - the function read txtfile pront to STDOUT
+ * @filename: pointer to the name of the file
+ * @letters: the number of letters passed
+ * Return: w- actual number of bytes read and printed 
+ * and 0 if the file name is null or it does not print anything
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -13,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (fptr == -1)
 	{
-		return(0);
+		return (0);
 	}
 	else
 	{
@@ -23,6 +27,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 		free(buff);
 		close(fptr);
-		return(w);
+		return (w);
 	}
 }
