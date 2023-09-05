@@ -2,14 +2,14 @@
 /**
  *
  */
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buff;
 	ssize_t t;
 	ssize_t w;
-	FILE* fptr;
+	ssize_t fptr;
 
-	fptr = fopen(name, O_RDONLY);
+	fptr = open(filename, O_RDONLY);
 
 	if (fptr == -1)
 	{
@@ -18,8 +18,8 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	else
 	{
 		buff = malloc(letters);
-		t = read(fd, buff, letters);
-		w = write(STDOUT,_FILENO, buff, t);
+		t = read(fptr, buff, letters);
+		w = write(STDOUT_FILENO, buff, t);
 
 		free(buff);
 		close(fptr);
